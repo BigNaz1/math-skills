@@ -10,5 +10,6 @@ func CalculateStandardDeviation(variance float64) int {
 		std = (std + variance/std) / 2
 	}
 
-	return int(std)
+	// Round up the standard deviation to the nearest integer
+	return int(std + 0.5)
 }
